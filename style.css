@@ -3,20 +3,12 @@
 /****************************************************/
 body{ 
     background-color:#ffeee5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Full viewport height */
 }
-
-{
-background-image: url("/Capybara.Folder/assets/images/homepage_background.png");
-background-size: 100%, 50%;
-background-color: #cccccc;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh; /* Full viewport height */
-  }
-
 
 /****************************************************/
 /* editing the headers */
@@ -45,11 +37,14 @@ H3 {
 /****************************************************/
 .button {
     background-color: #DBDBDB;
-    border-radius: 40px; 
+    border-radius: 50px; 
     color: #5B5959;
-    padding: 30px 40px; 
+    padding: 20px 30px; 
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 20px; 
+    display: flex;               /* added for centered text */
+    justify-content: center;     /* added for centered text */
+    align-items: center;         /* added for centered text */
 }
