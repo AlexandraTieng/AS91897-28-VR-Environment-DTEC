@@ -2,7 +2,7 @@
 /* setting the landing page background */
 /****************************************************/
 body{ 
-    background-image: url("/StudioGhibli/Assets/images/BackgroundOpeningPage.png");
+    background-image: url("/StudioGhibli/Assets/images/BackgroundOpening2.png");
     background-size: 100%, 50%;
     background-color: #cccccc;
     
@@ -16,6 +16,10 @@ body{
 /****************************************************/
 /* editing the headers */
 /****************************************************/
+H1, H2 {
+    margin: 0;
+    padding: 0;
+}
 H1 {
   font-size: 6em;
   color: #675151;
