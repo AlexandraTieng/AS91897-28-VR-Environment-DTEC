@@ -19,91 +19,160 @@
 // INTRODUCTION SECTION
 **********************************************************************************-->
 
-        <!--***************************************************
-        // WOOD FLOOR
-        ****************************************************-->
-        <a-plane position="0 0 -0.883" height="70"
-            width="35" rotation="-90 -90 0"
-            scale="1.000 1.000 1.000"
-            src="https://codehs.com/uploads/197e93c0c97899153601dd052769cee6">
+<!--***************************************************
+// WOOD FLOOR
+****************************************************-->
+<a-plane ID="intro floor"  position="0 -5.222 72.035" height="70"
+  width="35" rotation="-90 -90 0"
+  scale="6.000 3.000 10.000"
+  src="https://codehs.com/uploads/197e93c0c97899153601dd052769cee6">
+</a-plane>
 
-        </a-plane>
+<!--***************************************************
+// R&L WALLS
+****************************************************-->
+<a-box ID="RightWall" position="44.477 9.436 -6.343" height="12" 
+  width=".5"
+  scale="1.000 2.580 1.500"
+  color="#8a8a8a"
+  src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
+  depth="30">
+</a-box>
 
-        <!--***************************************************
-        // R&L WALLS
-        ****************************************************-->
-        <a-box ID="RightWall" position="35.018 11.976 -1.026" height="12" width=".5"
-            scale="1.000 2.000 1.200"
-            color="#8a8a8a"
-            src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-            depth="30">
+<a-box ID="left wall"  position="-41.238 9.293 -5.518" height="12" width=".5"
+  scale="1.000 2.480 1.480"
+  color="#bababa"
+  src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
+  depth="30">
+</a-box>
 
-        </a-box>
+<!--***************************************************
+// INTRO CEILING
+****************************************************-->
+<a-box rotation="0 0 -90" position="1.303 23.796 -6.429" 
+  height="45" 
+  width=".5"
+  scale="1.500 1.930 1.510"
+  color="#616161"
+  src="https://codehs.com/uploads/466fceb4ae53a5356d328ade41bc162b"   depth="30">
+</a-box>
 
-        <a-box position="-34.735 11.757 -0.848" height="12" width=".5"
-            scale="1.000 2.000 1.200"
-            color="#bababa"
-            src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-            depth="30">
+<!--***************************************************
+// INTRO FRONT WALL
+****************************************************-->
+<a-box ID="intro wall"  position="1.647 8.973 -26.754" height="1" 
+  width="7"
+  scale="12.310 30.000 0.001"
+  color="#b0b0b0"
+  src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
+  depth="25">
+</a-box>
 
-        </a-box>
+<!--***************************************************
+// INTRO BACK WALL 1
+****************************************************-->
+<a-box  ID="wall.1" rotation="0 -90 0" position="36.915 9.154 
+  16.395"       
+  height="12" width=".5"
+  scale="1.000 2.400 2.000"
+  src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
+  depth="25">
+</a-box>
 
-        <!--***************************************************
-        // INTRO CEILING
-        ****************************************************-->
-        <a-box rotation="0 0 -90" position="-0.055 24.025 -0.960" height="45" 
-            width=".5"
-            scale="1.500 1.550 1.200"
-            color="#616161"
-            src="https://codehs.com/uploads/466fceb4ae53a5356d328ade41bc162b"     
-            depth="30">
+<!--***************************************************
+// INTRO BACK WALL 2
+****************************************************-->
+<a-box  ID="wall.2" rotation="0 -90 0" position="-37.672 9.250 
+  16.527"       
+        height="12" width=".5"
+        scale="1.000 2.440 2.000" 
+  src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
+        depth="25">
+      </a-box>
 
-        </a-box>
+<!--***************************************************
+// INTRO BACK WALL 3
+****************************************************-->
+<a-box  ID="wall.3" rotation="0 -90 0" position="-1.248 16.789 16.550"       
+    height="12" width=".5"
+    scale="1.500 1.220 2.900" 
+   src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
+    depth="25">
+</a-box>
 
-        <!--***************************************************
-        // INTRO FRONT WALL
-        ****************************************************-->
-        <a-box ID="TESTwALL"  position="0.764 11.861 -18.258" height="1" width="7"
-            scale="25.000 30.000 0.001"
-            color="#b0b0b0"
-            src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-            depth="25">
-
-        </a-box>
-
-        <!--***************************************************
-        // INTRO BACK WALL
-        ****************************************************-->
-        <a-box  ID="TESTwALL2" rotation="0 -90 0" position="0.041 11.757 17.305"       
-            height="12" width=".5"
-            scale="1.000 2.000 2.800"
-            src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-            depth="25">
-
-        </a-box>
-
-      <!--***************************************************
-      // INTRO DOORS
-      ****************************************************-->
-      <a-gltf-model 
-        src="/StudioGhibli/Assets/3D/sliding_door.glb"
-        position="-0.241 0.089 16.713"
-        scale="5.000 5.000 1.000"
-      ></a-gltf-model>
+<!--***************************************************
+// INTRO DOOR DOOR
+****************************************************-->
+<a-gltf-model ID="grand door"
+    src="/StudioGhibli/Assets/3D/opened_quadruple_glass_doors.glb"
+    rotation="0 180 0"
+    position="-0.315 0.392 15.837"
+    scale="1.000 1.000 1.000">  
+</a-gltf-model>
 
       
 <!-- ******************************************************************************
 // MAIN GALLERY **********************************************************************************-->
 
     <!--***************************************************
-    // LIGHT FLOOR
+    // RIGHT WALL
     ****************************************************-->
-    <a-plane position="0 0 -40.986" height="70"
-        width="35" rotation="-90.000 90 0"
-        scale="1.000 1.000 1.000"
-        src="https://codehs.com/uploads/71e573041e4abe1357d7c716c848d88d">
-        
-    </a-plane>
+      <a-box ID="right wall"  position="55.255 15.306 86.031" height="1" 
+        width="7"
+        rotation="0 90 0"
+        scale="20.000 30.000 0.001"
+        color="#b0b0b0"
+        src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
+        depth="25">
+      </a-box>
+
+    <!--***************************************************
+    // LEFT WALL
+    ****************************************************-->
+      <a-box ID="left wall"  position="-55.184 15.011 85.241" height="1" 
+        rotation="0 90 0"
+        width="7"
+        scale="20.000 30.000 0.001"
+        color="#b0b0b0"
+        src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
+        depth="25">
+      </a-box>
+
+    <!--***************************************************
+    // BACK WALL
+    ****************************************************-->
+      <a-box ID="back wall"  position="0.764 14.717 155.476" height="1" 
+        width="7"
+        scale="16.000 30.000 0.001"
+        color="#b0b0b0"
+        src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
+        depth="25">
+      </a-box>
+
+      <!--***************************************************
+      // RIGHT INSIDE WALL
+      ****************************************************-->
+        <a-box ID="inside wall"  position="-12.640 9.513 86.031" height="1" 
+          width="7"
+          rotation="0 90 0"
+          scale="20.000 30.000 0.001"
+          color="#b0b0b0"
+          src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
+          depth="25">
+        </a-box>
+
+      <!--***************************************************
+      // RIGHT WALL
+      ****************************************************-->
+        <a-box ID="inininside wall"  position="11.436 9.645 86.031" height="1" 
+          width="7"
+          rotation="0 90 0"
+          scale="20.000 30.000 0.001"
+          color="#b0b0b0"
+          src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
+          depth="25">
+        </a-box>
+
 
     <!--***************************************************
     // PLANTS - Design 
