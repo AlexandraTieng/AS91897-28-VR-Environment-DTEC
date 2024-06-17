@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Studio Ghibli Gallery</title>
+		<!--Installing A-Frame-->
+		<script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+</head>
+<body>
+
+    <!--***************************************************
+    // SKY COLOR 
+    ****************************************************-->
+    <a-scene>
+    <a-sky color="lightblue"></a-sky>
+
+<!-- ******************************************************************************
+// INTRODUCTION SECTION
+**********************************************************************************-->
+
+        <!--***************************************************
+        // WOOD FLOOR
+        ****************************************************-->
+        <a-plane position="0 0 -0.883" height="70"
+            width="35" rotation="-90 -90 0"
+            scale="1.000 1.000 1.000"
+            src="https://codehs.com/uploads/197e93c0c97899153601dd052769cee6">
+
+        </a-plane>
+
+        <!--***************************************************
+        // R&L WALLS
+        ****************************************************-->
+        <a-box ID="RightWall" position="35.018 11.976 -1.026" height="12" width=".5"
+            scale="1.000 2.000 1.200"
+            color="#8a8a8a"
+            src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
+            depth="30">
+
+        </a-box>
+
+        <a-box position="-34.735 11.757 -0.848" height="12" width=".5"
+            scale="1.000 2.000 1.200"
+            color="#bababa"
+            src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
+            depth="30">
+
+        </a-box>
+
+        <!--***************************************************
+        // INTRO CEILING
+        ****************************************************-->
+        <a-box rotation="0 0 -90" position="-0.055 24.025 -0.960" height="45" 
+            width=".5"
+            scale="1.500 1.550 1.200"
+            color="#616161"
+            src="https://codehs.com/uploads/466fceb4ae53a5356d328ade41bc162b"     
+            depth="30">
+
+        </a-box>
+
+        <!--***************************************************
+        // INTRO FRONT WALL
+        ****************************************************-->
+        <a-box ID="TESTwALL"  position="0.764 11.861 -18.258" height="1" width="7"
+            scale="25.000 30.000 0.001"
+            color="#b0b0b0"
+            src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
+            depth="25">
+
+        </a-box>
+
+        <!--***************************************************
+        // INTRO BACK WALL
+        ****************************************************-->
+        <a-box  ID="TESTwALL2" rotation="0 -90 0" position="0.041 11.757 17.305"       
+            height="12" width=".5"
+            scale="1.000 2.000 2.800"
+            src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
+            depth="25">
+
+        </a-box>
+
+      <!--***************************************************
+      // INTRO DOORS
+      ****************************************************-->
+      <a-gltf-model 
+        src="/StudioGhibli/Assets/3D/sliding_door.glb"
+        position="-0.241 0.089 16.713"
+        scale="5.000 5.000 1.000"
+      ></a-gltf-model>
+
+      
+<!-- ******************************************************************************
+// MAIN GALLERY **********************************************************************************-->
+
+    <!--***************************************************
+    // LIGHT FLOOR
+    ****************************************************-->
+    <a-plane position="0 0 -40.986" height="70"
+        width="35" rotation="-90.000 90 0"
+        scale="1.000 1.000 1.000"
+        src="https://codehs.com/uploads/71e573041e4abe1357d7c716c848d88d">
+        
+    </a-plane>
+
+    <!--***************************************************
+    // PLANTS - Design 
+    ****************************************************-->
+    <a-gltf-model 
+      src="https://codehs.com/uploads/04455812627c590e2b3d380568e85561"
+      position="-31.579 -0.255 -46.894"
+    ></a-gltf-model>
+    
+    <a-gltf-model 
+      src="https://codehs.com/uploads/04455812627c590e2b3d380568e85561"
+      position="31.629 0.050 -46.096"
+    ></a-gltf-model>
+    
+    <!--***************************************************
+    // PICTURE FRAMES
+    ****************************************************-->
+    <a-gltf-model 
+      src="https://codehs.com/uploads/07e5163c568ab729655d4c142925d000"
+      position="-33.992 7.418 -10.532"
+      rotation="0 -270.000 0"
+      scale="10 10 10"
+    ></a-gltf-model>
+    
+    <a-gltf-model 
+      src="https://codehs.com/uploads/07e5163c568ab729655d4c142925d000"
+      position="34.432 7.321 -10.562"
+      rotation="0 -90 0"
+      scale="10 10 10"
+    ></a-gltf-model>
+    
+    
+    <!--***************************************************
+    // PICTURE 
+    ****************************************************-->
+    <a-gltf-model 
+      src="https://codehs.com/uploads/0e64c6227654cc21ec917b6b6c46a201"
+      position="7.125 -1.649 -29.243"
+      scale="3.5 3.5 3.5"
+    ></a-gltf-model>
+    
+    
+    <!--***************************************************
+    // GIRL
+    ****************************************************-->
+    <a-gltf-model 
+      src="https://codehs.com/uploads/393e8a812a685a6b9d5a3a993076f4bf"
+      rotation="0 -500 0"
+      position="3 0.012 -25"
+    ></a-gltf-model>
+    
+    
+    </a-scene>
+    
+    
+</body>
+</html>
