@@ -75,6 +75,7 @@
   16.395"       
   height="12" width=".5"
   scale="1.000 2.400 2.000"
+  color="#d6d6d6"
   src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
   depth="25">
 </a-box>
@@ -86,6 +87,7 @@
   16.527"       
         height="12" width=".5"
         scale="1.000 2.440 2.000" 
+        color="#d6d6d6"
   src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
         depth="25">
       </a-box>
@@ -108,6 +110,7 @@
 <a-box  ID="wall.2.L" rotation="0 -90 0" position="-79.589 9.250 
     16.527"       
     height="12" width=".5"
+    color="#d6d6d6"
     scale="1.000 2.440 2.000" 
     src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
     depth="25">
@@ -120,16 +123,19 @@
     16.527"       
     height="12" width=".5"
     scale="1.000 2.440 2.000" 
+    color="#d6d6d6"
     src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
     depth="25">
 </a-box>
-      
+
+
 <!--***************************************************
 // INTRO BACK WALL 3
 ****************************************************-->
 <a-box  ID="wall.3" rotation="0 -90 0" position="-1.248 16.789 16.550"       
     height="12" width=".5"
-    scale="1.500 1.220 2.900" 
+    scale="1.090 1.220 2.900" 
+    color="#d6d6d6"
    src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
     depth="25">
 </a-box>
@@ -144,6 +150,26 @@
     scale="1.000 1.000 1.000">  
 </a-gltf-model>
 
+<!--***************************************************
+// INTRO DOOR DOOR
+****************************************************-->
+<a-gltf-model ID="grand door"
+  src="/StudioGhibli/Assets/3D/fire_escape__exit_doors.glb"
+    rotation="0 -90.000 0"
+    position="0.137 -7.791 155.395"
+    scale="40.000 9.000 9.000">  
+</a-gltf-model>
+
+      <!--***************************************************
+      // INTRO DOOR DOOR
+      ****************************************************-->
+      <a-gltf-model ID="grand door"
+        src="/StudioGhibli/Assets/3D/fire_escape__exit_doors.glb"
+          rotation="0 90.000 0"
+          position="0.137 -7.791 148.049"
+          scale="30.000 9.000 9.000">  
+      </a-gltf-model>
+
       
 <!-- ******************************************************************************
 // MAIN GALLERY **********************************************************************************-->
@@ -151,14 +177,25 @@
     <!--***************************************************
     // RIGHT WALL
     ****************************************************-->
-      <a-box ID="right wall"  position="47.390 9.013 177.859" height="1" 
+      <a-box ID="right wall"  position="-50.943 9.013 177.859" height="1" 
         width="7"
         rotation="0 90 0"
         scale="7.680 30.000 0.071"
-        color="#b0b0b0"
-        src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
+        color="#b0b0b0" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
         depth="25">
       </a-box>
+
+      <!--***************************************************
+      // RIGHT WALL
+      ****************************************************-->
+        <a-box ID="left wall2"  position="47.390 9.013 177.859" height="1" 
+          width="7"
+          rotation="0 90 0"
+          scale="7.680 30.000 0.071"
+          color="#b0b0b0"
+          src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
+          depth="25">
+        </a-box>
 
     <!--***************************************************
     // LEFT WALL
@@ -198,7 +235,7 @@
       <!--***************************************************
       // RIGHT WALL
       ****************************************************-->
-        <a-box ID="inininside wall"  position="69.428 9.645 96.395" height="1" 
+        <a-box ID="inininside wall"  position="69.428 9.645 85.083" height="1" 
           width="7"
           rotation="0 90 0"
           scale="20.000 30.000 0.071"
@@ -275,6 +312,47 @@
         scale="3.620 0.110 4.000"
       src="/StudioGhibli/Assets/Images/foundersnames.png">
     </a-plane>
+
+<!--***************************************************
+// WALL GREETINGS
+****************************************************-->
+<a-plane ID="greetings wall"  position="-0.123 9.235 42.470"     
+    height="20"
+    width="10" rotation="0 180 0"
+    scale="6.520 1.310 4.000"
+    src="/StudioGhibli/Assets/Images/DTEC - Greetings.png">
+</a-plane>
+
+<!--***************************************************
+// GREETINGS WALL
+****************************************************-->
+<a-box ID="greetings wall"  position="-0.076 9.215 43.422" height="1" 
+          width="7"
+          rotation="0 180 0"
+          scale="9.740 28.970 0.071"
+          color="#9c9c9c" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
+          depth="25">
+</a-box>
+
+
+<!--***************************************************
+// INTRO DOOR DOOR
+****************************************************-->
+<a-gltf-model ID="minecraft totoro"
+  src="/StudioGhibli/Assets/3D/my_neighbor_totoro_studio_ghibli.glb"
+  rotation="0 -90.000 0"
+  position="0.137 -5.540 104.531"
+  scale="0.400 0.400 0.400">  
+</a-gltf-model>
+
+<!--***************************************************
+// PAINTING 1
+****************************************************-->
+<a-plane ID="art 1"  position="44.182 9.018 -4.749" height="20"
+        width="10" rotation="0 -90 0"
+        scale="3.080 1.190 4.000"
+        src="/StudioGhibli/Assets/Artworks/girlspiritedaway.jpg">
+</a-plane>
 
 </body>
 </html>
