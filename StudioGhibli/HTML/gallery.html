@@ -1,398 +1,249 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Studio Ghibli Gallery</title>
-		<!--Installing A-Frame-->
-		<script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Studio Ghibli Gallery</title>
 
-    <!--***************************************************
-    // SKY COLOR 
-    ****************************************************-->
+    <!--Installing A-Frame-->
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+
+    <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js" crossorigin="anonymous"></script>
+
+    
+    <!-- A-frame extras
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+
+     <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script> -->
+
+  </head>
+  <body>
+
     <a-scene>
-    <a-sky color="lightblue"
-      scale="3 3 3">
-      
-      </a-sky>
+      <!--<a-scene physics="gravity: -9.8;restitution: 0.1" inspector-plugin-recast>
 
-<!-- ******************************************************************************
+        <a-entity id="rig" position="0 0 0" movement-controls="constrainToNavMesh: true;speed:0.5;">
+          <a-entity camera id="camera" position="0 1.6 0" look-controls
+            extended-wasd-controls>
+          </a-entity>
+        </a-entity> -->
+
+    
+      <!-- ******************************************************************************
 // INTRODUCTION SECTION
 **********************************************************************************-->
-
-<!--***************************************************
+      <!--***************************************************
 // WOOD FLOOR
 ****************************************************-->
-<a-plane ID="intro floor"  position="0 -5.222 101.757" height="70"
-  width="35" rotation="-90 -90 0"
-  scale="11.280 3.000 10.000"
-  src="https://codehs.com/uploads/197e93c0c97899153601dd052769cee6">
-</a-plane>
-
-<!--***************************************************
+      <a-plane ID="intro floor" position="0 -5.222 101.757" height="70" width="35" rotation="-90 -90 0" scale="11.280 3.000 10.000" src="https://codehs.com/uploads/197e93c0c97899153601dd052769cee6"></a-plane>
+      <!--***************************************************
 // R&L WALLS
 ****************************************************-->
-<a-box ID="RightWall" position="44.477 9.436 -6.343" height="12" 
-  width=".5"
-  scale="1.000 2.580 1.500"
-  color="#8a8a8a"
-  src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-  depth="30">
-</a-box>
-
-<a-box ID="left wall"  position="-41.238 9.293 -5.518" height="12" width=".5"
-  scale="1.000 2.480 1.480"
-  color="#bababa"
-  src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-  depth="30">
-</a-box>
-
-<!--***************************************************
+      <a-box ID="RightWall" position="44.477 9.436 -6.343" height="12" width=".5" scale="1.000 2.580 1.500" color="#8a8a8a" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="30"></a-box>
+      <a-box ID="left wall" position="-41.238 9.293 -5.518" height="12" width=".5" scale="1.000 2.480 1.480" color="#bababa" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="30"></a-box>
+      <!--***************************************************
 // INTRO CEILING
 ****************************************************-->
-<a-box rotation="0 0 -90" position="1.303 23.796 -6.429" 
-  height="45" 
-  width=".5"
-  scale="1.500 1.930 1.510"
-  color="#616161"
-  src="https://codehs.com/uploads/466fceb4ae53a5356d328ade41bc162b"   depth="30">
-</a-box>
-
-<!--***************************************************
+      <a-box rotation="0 0 -90" position="1.303 23.796 -6.429" height="45" width=".5" scale="1.500 1.930 1.510" color="#616161" src="https://codehs.com/uploads/466fceb4ae53a5356d328ade41bc162b" depth="30"></a-box>
+      <!--***************************************************
 // INTRO FRONT WALL
 ****************************************************-->
-<a-box ID="intro wall"  position="1.647 8.973 -26.754" height="1" 
-  width="7"
-  scale="12.310 30.000 0.001"
-  color="#b0b0b0"
-  src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-  depth="25">
-</a-box>
-
-<!--***************************************************
+      <a-box ID="intro wall" position="1.647 8.973 -26.754" height="1" width="7" scale="12.310 30.000 0.001" color="#b0b0b0" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <!--***************************************************
 // INTRO BACK WALL 1
 ****************************************************-->
-<a-box  ID="wall.1" rotation="0 -90 0" position="36.915 9.154 
-  16.395"       
-  height="12" width=".5"
-  scale="1.000 2.400 2.000"
-  color="#d6d6d6"
-  src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-  depth="25">
-</a-box>
-
-<!--***************************************************
+      <a-box ID="wall.1" rotation="0 -90 0" position="36.915 9.154 
+  16.395" height="12" width=".5" scale="1.000 2.400 2.000" color="#d6d6d6" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <!--***************************************************
 // INTRO BACK WALL 2
 ****************************************************-->
-<a-box  ID="wall.2" rotation="0 -90 0" position="80.539 9.250 
-  16.527"       
-        height="12" width=".5"
-        scale="1.000 2.440 2.000" 
-        color="#d6d6d6"
-  src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-        depth="25">
-      </a-box>
-
-<!--***************************************************
+      <a-box ID="wall.2" rotation="0 -90 0" position="80.539 9.250 
+  16.527" height="12" width=".5" scale="1.000 2.440 2.000" color="#d6d6d6" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <!--***************************************************
 // CARPET
 ****************************************************-->
-<a-box ID="carpet"  position="-0.234 -5.204 78.912" height="1" 
-  width="7"
-  rotation="-90 0 0"
-  scale="1.850 200.000 0.001"
-  color="#b85151"
-  src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-  depth="25">
-</a-box>
-
-<!--***************************************************
+      <a-box ID="carpet" position="-0.234 -5.204 78.912" height="1" width="7" rotation="-90 0 0" scale="1.850 220.000 0.001" color="#b85151" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <!--***************************************************
 // INTRO BACK WALL EXTEND LEFT 
 ****************************************************-->
-<a-box  ID="wall.2.L" rotation="0 -90 0" position="-79.589 9.250 
-    16.527"       
-    height="12" width=".5"
-    color="#d6d6d6"
-    scale="1.000 2.440 2.000" 
-    src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-    depth="25">
-</a-box>
-
-<!--***************************************************
+      <a-box ID="wall.2.L" rotation="0 -90 0" position="-79.589 9.250 
+    16.527" height="12" width=".5" color="#d6d6d6" scale="1.000 2.440 2.000" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <!--***************************************************
 // INTRO BACK WALL EXTEND RIGHT 
 ****************************************************-->
-<a-box  ID="wall.2" rotation="0 -90 0" position="-37.672 9.250 
-    16.527"       
-    height="12" width=".5"
-    scale="1.000 2.440 2.000" 
-    color="#d6d6d6"
-    src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-    depth="25">
-</a-box>
-
-
-<!--***************************************************
+      <a-box ID="wall.2" rotation="0 -90 0" position="-37.672 9.250 
+    16.527" height="12" width=".5" scale="1.000 2.440 2.000" color="#d6d6d6" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <!--***************************************************
 // INTRO BACK WALL 3
 ****************************************************-->
-<a-box  ID="wall.3" rotation="0 -90 0" position="-1.248 16.789 16.550"       
-    height="12" width=".5"
-    scale="1.090 1.220 2.900" 
-    color="#d6d6d6"
-   src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-    depth="25">
-</a-box>
-
-<!--***************************************************
+      <a-box ID="wall.3" rotation="0 -90 0" position="-1.248 16.789 16.550" height="12" width=".5" scale="1.090 1.220 2.900" color="#d6d6d6" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <!--***************************************************
 // INTRO DOOR DOOR
 ****************************************************-->
-<a-gltf-model ID="grand door"
-    src="/StudioGhibli/Assets/3D/opened_quadruple_glass_doors.glb"
-    rotation="0 180 0"
-    position="-0.315 0.392 15.837"
-    scale="1.000 1.000 1.000">  
-</a-gltf-model>
-
-<!--***************************************************
+      <a-gltf-model ID="grand door" src="/StudioGhibli/Assets/3D/opened_quadruple_glass_doors.glb" rotation="0 180 0" position="-0.315 0.392 15.837" scale="1.000 1.000 1.000"></a-gltf-model>
+      <!--***************************************************
 // INTRO DOOR DOOR
 ****************************************************-->
-<a-gltf-model ID="fireExit"
-  src="/StudioGhibli/Assets/3D/fire_escape__exit_doors.glb"
-    rotation="0 -90.000 0"
-    position="0.137 -7.791 212.807"
-    scale="40.000 9.000 9.000">  
-</a-gltf-model>
-
+      <a-gltf-model ID="fireExit" src="/StudioGhibli/Assets/3D/fire_escape__exit_doors.glb" rotation="0 -90.000 0" position="0.137 -7.791 212.807" scale="40.000 9.000 9.000"></a-gltf-model>
       <!--***************************************************
       // INTRO DOOR DOOR
       ****************************************************-->
-      <a-gltf-model ID="Fireexit"
-        src="/StudioGhibli/Assets/3D/fire_escape__exit_doors.glb"
-          rotation="0 90.000 0"
-          position="0.137 -7.791 205.439"
-          scale="30.000 9.000 9.000">  
-      </a-gltf-model>
-
-      
-<!-- ******************************************************************************
+      <a-gltf-model ID="Fireexit" src="/StudioGhibli/Assets/3D/fire_escape__exit_doors.glb" rotation="0 90.000 0" position="0.137 -7.791 205.439" scale="30.000 9.000 9.000"></a-gltf-model>
+      <!-- ******************************************************************************
 // MAIN GALLERY **********************************************************************************-->
-
-    <!--***************************************************
+      <!--***************************************************
     // RIGHT WALL
     ****************************************************-->
-      <a-box ID="right wall"  position="-40.247 9.013 244.470" height="1" 
-        width="7"
-        rotation="0 90 0"
-        scale="10.000 30.000 0.071"
-        color="#b0b0b0" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-        depth="25">
-      </a-box>
-
+      <a-box ID="right wall" position="-40.247 9.013 244.470" height="1" width="7" rotation="0 90 0" scale="10.000 30.000 0.071" color="#b0b0b0" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
       <!--***************************************************
-      // RIGHT WALL
-      ****************************************************-->
-        <a-box ID="left wall2"  position="38.273 9.693 243.872" height="1" 
-          width="7"
-          rotation="0 90 0"
-          scale="10.000 30.000 0.071"
-          color="#b0b0b0"
-          src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-          depth="25">
-        </a-box>
-
-    <!--***************************************************
+// LEFT WALL2
+****************************************************-->
+      <a-box ID="left wall2" position="38.273 9.693 243.872" height="1" width="7" rotation="0 90 0" scale="10.000 30.000 0.071" color="#b0b0b0" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <!--***************************************************
     // LEFT WALL 
     ****************************************************-->
-      <a-box ID="left wall MAIN"  position="-80.976 9.117 138.878" height="1" 
-        rotation="0 90 0"
-        width="7"
-        scale="35.000 30.000 0.071"
-        color="#b0b0b0"
-        src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-        depth="25">
-      </a-box>
-
-    <!--***************************************************
+      <a-box ID="left wall MAIN" position="-80.976 9.117 138.878" height="1" rotation="0 90 0" width="7" scale="35.000 30.000 0.071" color="#b0b0b0" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <!--***************************************************
     // BACK WALL
     ****************************************************-->
-      <a-box ID="back wall"  position="0.764 9.915 278.974" height="1" 
-        width="7"
-        scale="30.000 30.000 -0.099"
-        color="#b0b0b0"
-        src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-        depth="25">
-      </a-box>
-
+      <a-box ID="back wall" position="0.764 9.915 278.974" height="1" width="7" scale="30.000 30.000 -0.099" color="#b0b0b0" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
       <!--***************************************************
       // RIGHT INSIDE WALL
       ****************************************************-->
-        <a-box ID="inside wall"  position="-0.604 9.513 208.576" height="1" 
-          width="7"
-          rotation="0 0 0"
-          scale="24.210 30.000 0.081"
-          color="#b0b0b0"
-          src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-          depth="25">
-        </a-box>
-
+      <a-box ID="inside wall" position="-43.507 9.513 208.576" height="1" width="7" rotation="0 0 0" scale="10.620 30.000 0.081" color="#b0b0b0" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <!--***************************************************
+      // RIGHT INSIDE2 WALL
+      ****************************************************-->
+      <a-box ID="inside2 wall" position="-0.105 16.623 208.576" height="1" width="7" rotation="0 0 0" scale="10.620 15.890 0.081" color="#b0b0b0" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <!--***************************************************
+      // RIGHT INSIDE3 WALL
+      ****************************************************-->
+      <a-box ID="inside3 wall" position="43.483 9.513 208.576" height="1" width="7" rotation="0 0 0" scale="10.620 30.000 0.081" color="#b0b0b0" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
       <!--***************************************************
       // RIGHT WALL
       ****************************************************-->
-        <a-box ID="inininside wall"  position="80.645 8.266 138.597" height="1" 
-          width="7"
-          rotation="0 90 0"
-          scale="35.000 30.000 0.071"
-          color="#b0b0b0"
-          src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-          depth="25">
-        </a-box>
-
-
-    <!--***************************************************
+      <a-box ID="inininside wall" position="80.645 8.266 138.597" height="1" width="7" rotation="0 90 0" scale="35.000 30.000 0.071" color="#b0b0b0" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <!--***************************************************
+// INSIDE WALL2
+****************************************************-->
+      <a-box ID="insidewall2" position="41.875 5.354 152.535" height="1" width="7" rotation="0 90 0" scale="11.500 22.220 -0.039" color="#e2ddc5" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <!--***************************************************
+// INSIDE WALL3
+****************************************************-->
+      <a-box ID="insidewall3" position="-41.978 5.354 152.535" height="1" width="7" rotation="0 90 0" scale="11.500 22.220 -0.039" color="#e2ddc5" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <!--***************************************************
+// INSIDE WALL4
+****************************************************-->
+      <a-box ID="insidewall4" position="40.508 5.354 82.283" height="1" width="7" rotation="0 0 0" scale="7.500 22.220 -0.039" color="#e2ddc5" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <!--***************************************************
+// INSIDE WALL5
+****************************************************-->
+      <a-box ID="insidewall5" position="-42.126 5.354 82.645" height="1" width="7" rotation="0 0 0" scale="7.500 22.220 -0.039" color="#e2ddc5" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <!--***************************************************
     // PLANTS - Design 
     ****************************************************-->
-    <a-gltf-model 
-      src="/StudioGhibli/Assets/3D/rhyzome_plant.glb"
-      position="-15.560 -5.308 19.338"
-      scale="8 8 8"
-    ></a-gltf-model>
-    
-    <a-gltf-model 
-      src="/StudioGhibli/Assets/3D/rhyzome_plant.glb"
-      scale="8 8 8"
-      position="14.501 -5.621 18.930"
-    ></a-gltf-model>
-
-<!--***************************************************
-// BUDDHA FACE STATUE 
-****************************************************-->
-<a-gltf-model ID="buddha face"
-  src="/StudioGhibli/Assets/3D/buddha_face_statue__ghibli_style.glb"
-  position="46.997 -5.308 18.516"
-  rotation="0 -90.000 0"
-  scale="0.050 0.050 0.050"
- ></a-gltf-model>
-  
-<a-gltf-model ID="buddha face2"
-    src="/StudioGhibli/Assets/3D/buddha_face_statue__ghibli_style.glb"
-    position="-15.560 -5.308 19.338"
-    rotation="0 -90.000 0"
-    scale="0.050 0.050 0.050"
-></a-gltf-model>
-    
-
-    <!--***************************************************
+      <a-gltf-model src="/StudioGhibli/Assets/3D/rhyzome_plant.glb" position="-15.560 -5.308 19.338" scale="8 8 8"></a-gltf-model>
+      <a-gltf-model src="/StudioGhibli/Assets/3D/rhyzome_plant.glb" scale="8 8 8" position="14.501 -5.621 18.930"></a-gltf-model>
+      <!--***************************************************
     // CANVA INTRO
     ****************************************************-->
-    <a-plane ID="introduction Ghibli"  position="1.389 9.112 -26.308" height="20"
-      width="10" rotation="0 0 0"
-      scale="6.550 1.310 4.000"
-      src="/StudioGhibli/Assets/Images/DTEC - Studio Ghibli Art Gallery (2).png">
-    </a-plane>
-
-    <!--***************************************************
+      <a-plane ID="introduction Ghibli" position="1.389 9.112 -26.308" height="20" width="10" rotation="0 0 0" scale="6.550 1.310 4.000" src="/StudioGhibli/Assets/Images/DTEC - Studio Ghibli Art Gallery (2).png"></a-plane>
+      <!--***************************************************
     // INTRO AWARDS PNG
     ****************************************************-->
-    <a-plane ID="awards png"  position="44.182 9.018 -4.749" height="20"
-      width="10" rotation="0 -90 0"
-      scale="3.080 1.190 4.000"
-      src="/StudioGhibli/Assets/Images/studioghibliaward.png">
-    </a-plane>
-
-    <!--***************************************************
+      <a-plane ID="awards png" position="44.182 9.018 -4.749" height="20" width="10" rotation="0 -90 0" scale="3.080 1.190 4.000" src="/StudioGhibli/Assets/Images/studioghibliaward.png"></a-plane>
+      <!--***************************************************
     // INTRO QUOTE PNG
     ****************************************************-->
-    <a-plane ID="quote png"  position="-0.656 17.074 15.733" height="20"
-      width="10" rotation="0 -180 0"
-      scale="3.270 0.370 4.000"
-      src="/StudioGhibli/Assets/Images/ghibliquote.png">
-    </a-plane>
-
-    <!--***************************************************
+      <a-plane ID="quote png" position="-0.656 17.074 15.733" height="20" width="10" rotation="0 -180 0" scale="3.270 0.370 4.000" src="/StudioGhibli/Assets/Images/ghibliquote.png"></a-plane>
+      <!--***************************************************
     // INTRO FOUNDERS PNG
     ****************************************************-->
-    <a-plane ID="founders png"  position="-39.502 8.117 -5.016" height="20"
-      width="10" rotation="0 90 0"
-      scale="2.670 0.700 4.000"
-      src="/StudioGhibli/Assets/Images/foundersghibli.png">
-    </a-plane>
-
-    <!--***************************************************
+      <a-plane ID="founders png" position="-39.502 8.117 -5.016" height="20" width="10" rotation="0 90 0" scale="2.670 0.700 4.000" src="/StudioGhibli/Assets/Images/foundersghibli.png"></a-plane>
+      <!--***************************************************
     // INTRO QUOTE2 PNG
     ****************************************************-->
-    <a-plane ID="quote2 png"  position="-39.287 18.671 -5.051" height="20"
-      width="10" rotation="0 90 0"
-      scale="2.470 0.210 4.000"
-      src="/StudioGhibli/Assets/Images/quote2.png">
-    </a-plane>
-
-    <!--***************************************************
+      <a-plane ID="quote2 png" position="-39.287 18.671 -5.051" height="20" width="10" rotation="0 90 0" scale="2.470 0.210 4.000" src="/StudioGhibli/Assets/Images/quote2.png"></a-plane>
+      <!--***************************************************
     // INTRO FOUNDERS NAMES PNG
     ****************************************************-->
-      <a-plane ID="founders name png"  position="-39.797 -1.439 -4.812" height="20"
-        width="10" rotation="0 90 0"
-        scale="3.620 0.110 4.000"
-      src="/StudioGhibli/Assets/Images/foundersnames.png">
-    </a-plane>
-
-<!--***************************************************
+      <a-plane ID="founders name png" position="-39.797 -1.439 -4.812" height="20" width="10" rotation="0 90 0" scale="3.620 0.110 4.000" src="/StudioGhibli/Assets/Images/foundersnames.png"></a-plane>
+      <!--***************************************************
 // WALL GREETINGS
 ****************************************************-->
-<a-plane ID="greetings wall"  position="-0.123 9.235 42.470"     
-    height="20"
-    width="10" rotation="0 180 0"
-    scale="6.520 1.310 4.000"
-    src="/StudioGhibli/Assets/Images/DTEC - Greetings.png">
-</a-plane>
-
-<!--***************************************************
+      <a-plane ID="greetings wall" position="-0.123 9.235 44.397" height="20" width="10" rotation="0 180 0" scale="6.520 1.310 4.000" src="/StudioGhibli/Assets/Images/DTEC - Greetings.png"></a-plane>
+      <!--***************************************************
 // GREETINGS WALL
 ****************************************************-->
-<a-box ID="greetings wall"  position="-0.076 9.215 43.422" height="1" 
-          width="7"
-          rotation="0 180 0"
-          scale="9.740 28.970 0.071"
-          color="#9c9c9c" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" 
-          depth="25">
-</a-box>
-
-
-<!--***************************************************
+      <a-box ID="greetings wall" position="-0.076 9.215 45.424" height="1" width="7" rotation="0 180 0" scale="9.740 28.970 0.071" color="#9c9c9c" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <!--***************************************************
 // INTRO DOOR DOOR
 ****************************************************-->
-<a-gltf-model ID="minecraft totoro"
-  src="/StudioGhibli/Assets/3D/my_neighbor_totoro_studio_ghibli.glb"
-  rotation="0 -9.838 0"
-  position="-13.469 -4.848 49.812"
-  scale="0.400 0.400 0.400">  
-</a-gltf-model>
-
-<!--***************************************************
+      <a-gltf-model ID="minecraft totoro" src="/StudioGhibli/Assets/3D/my_neighbor_totoro_studio_ghibli.glb" rotation="0 -9.838 0" position="-13.469 -4.848 49.812" scale="0.400 0.400 0.400"></a-gltf-model>
+      <!--***************************************************
+// GHIBLI GUY 3D
+****************************************************-->
+      <a-gltf-model ID="guy 3D" src="/StudioGhibli/Assets/3D/studio_ghibli.glb" rotation="0 -90 0" position="-0.825 -2.973 146.453" scale="0.020 0.020 0.020"></a-gltf-model>
+       <!--***************************************************
+// GHIBLI GUY.INFO
+****************************************************-->
+      <a-plane ID="ghibli guy.INFO" position="10.202 4.411 128.841" height="20" width="10" rotation="0 180 0" scale="1.110 0.810 4.000" src="/StudioGhibli/Assets/Images/feedback.png"></a-plane>
+      <!--***************************************************
 // PAINTING 1
 ****************************************************-->
-<a-plane ID="art 1"  position="67.642 9.092 33.035" height="20"
-        width="10" rotation="0 -90 0"
-        scale="2.000 1.190 4.000"
-        src="/StudioGhibli/Assets/Artworks/girlspiritedaway.jpg">
-</a-plane>
-
-<!--***************************************************
+      <a-plane ID="art 1" position="79.464 9.130 33.035" height="20" width="10" rotation="0 -90 0" scale="2.000 1.190 4.000" src="/StudioGhibli/Assets/Artworks/girlspiritedaway.jpg"></a-plane>
+      <!--***************************************************
 // PAINTING 3
 ****************************************************-->
-<a-plane ID="art 3"  position="-53.520 9.018 17.385" height="20"
-      width="10" rotation="0 360.000 0"
-      scale="1.510 1.190 4.000"
-      src="/StudioGhibli/Assets/Artworks/spiritedaway.jpg">
-</a-plane>
-
-<!--***************************************************
+      <a-plane ID="art 3" position="-53.520 9.018 17.385" height="20" width="10" rotation="0 360.000 0" scale="1.510 1.190 4.000" src="/StudioGhibli/Assets/Artworks/spiritedaway.jpg"></a-plane>
+      <!--***************************************************
 // PAINTING 4
 ****************************************************-->
-<a-plane ID="art 4"  position="52.485 9.018 17.217" height="20"
-    width="10" rotation="0 360 0"
-    scale="1.610 1.210 4.000"
-    src="/StudioGhibli/Assets/Artworks/studioghibliall.jpg">
-</a-plane>
+      <a-plane ID="art 4" position="52.485 9.018 17.217" height="20" width="10" rotation="0 360 0" scale="1.610 1.210 4.000" src="/StudioGhibli/Assets/Artworks/studioghibliall.jpg"></a-plane>
+      <!--***************************************************
+// PAINTING 5
+****************************************************-->
+      <a-plane ID="art 5" position="-10.657 9.018 46.804" height="20" width="10" rotation="0 0 0" scale="2.380 1.280 4.000" src="/StudioGhibli/Assets/Artworks/Miyazaki'sWorld.png"></a-plane>
+      <!--***************************************************
+// PAINTING 5.INFO
+****************************************************-->
+      <a-plane ID="art 5.INFO" position="11.167 9.018 46.654" height="20" width="10" rotation="0 0 0" scale="1.610 1.210 4.000" src="/StudioGhibli/Assets/Artworks/Miyazaki'sWorldINFO.png"></a-plane>
 
-</body>
+<!--***************************************************
+// TOTORO STILLS
+****************************************************-->
+<a-plane ID="TOTORO STILLS" position="40.572 5.486 82.037" height="20"       width="10" rotation="0 180 0" scale="4.350 0.950 4.000"     src="/StudioGhibli/Assets/Images/DTEC - TotoroStills.png"></a-plane>
+
+<!--***************************************************
+// KIKI STILLS
+****************************************************-->
+<a-plane ID="KIKI STILLS" position="-42.851 5.486 82.126" height="20"       width="10" rotation="0 180 0" scale="4.350 0.950 4.000"     src="/StudioGhibli/Assets/Images/DTEC - KikiStills.png"></a-plane>
+
+<!--***************************************************
+// FILM SKETCHES
+****************************************************-->
+<a-plane ID="Film Sketches" position="-42.851 5.575 83.191" height="20"       width="10" rotation="0 0 0" color="#c7c7c7" scale="4.820 0.950 4.000"     src="/StudioGhibli/Assets/Images/DTEC - Sketches.png"></a-plane>
+
+<!--***************************************************
+// ARTIST SKETCHES
+****************************************************-->
+<a-plane ID="Artist Sketches" position="40.411 5.575 83.191" height="20"       width="10" rotation="0 0 0" color="#c7c7c7" scale="4.820 0.950 4.000"     src="/StudioGhibli/Assets/Images/DTEC - K.Sketches.png"></a-plane>
+
+<!--***************************************************
+// PRINCESS KAGUYA STILLS ****************************************************-->
+<a-plane ID="KAGUYA STILLS1" position="42.510 5.974 152.555" height="20"       width="10" rotation="0 90 0" color="#c7c7c7" scale="4.820 0.950 4.000"     src="/StudioGhibli/Assets/Images/PrincessKaguya1.png"></a-plane>
+
+<!--***************************************************
+// PRINCESS KAGUYA STILLS ****************************************************-->
+      <a-plane ID="KAGUYA STILLS2" position="40.980 5.803 153.502" height="20"       width="10" rotation="0 -90 0" color="#c7c7c7" scale="5.780 0.950 4.000"     src="/StudioGhibli/Assets/Images/PrincessKaguya2.png"></a-plane>
+
+<!--***************************************************
+// PRINCESS KAGUYA STILLS ****************************************************-->
+            <a-plane ID="KAGUYA STILLS3" position="42.650 5.947 183.421" height="20"       width="10" rotation="0 90 0" color="#c7c7c7" scale="1.060 0.950 4.000"     src="/StudioGhibli/Assets/Images/PrincessKaguya3.png"></a-plane>
+
+<!--***************************************************
+// PRINCESS KAGUYA STILLS ****************************************************-->
+            <a-plane ID="KAGUYA STILLS4" position="42.414 5.575 121.051" height="20"       width="10" rotation="0 90 0" color="#c7c7c7" scale="1.060 0.950 4.000"     src="/StudioGhibli/Assets/Images/PrincessKaguya4.png"></a-plane>
+      
+  </body>
 </html>
