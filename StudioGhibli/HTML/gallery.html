@@ -11,16 +11,16 @@
     <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js" crossorigin="anonymous"></script>
 
     
-    <!-- A-frame extras
+    A-frame extras
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 
-     <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script> -->
+     <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script> 
 
   </head>
   <body>
 
     <a-scene>
-      <!--<a-scene physics="gravity: -9.8;restitution: 0.1" inspector-plugin-recast>
+      <a-scene physics="gravity: -9.8;restitution: 0.1" inspector-plugin-recast>
 
         <a-entity id="rig" position="0 0 0" movement-controls="constrainToNavMesh: true;speed:0.5;">
           <a-entity camera id="camera" position="0 1.6 0" look-controls
@@ -29,13 +29,11 @@
         </a-entity> -->
 
     
-      <!-- ******************************************************************************
-// INTRODUCTION SECTION
-**********************************************************************************-->
       <!--***************************************************
 // WOOD FLOOR
 ****************************************************-->
-      <a-plane ID="intro floor" position="0 -5.222 101.757" height="70" width="35" rotation="-90 -90 0" scale="11.280 3.000 10.000" src="https://codehs.com/uploads/197e93c0c97899153601dd052769cee6"></a-plane>
+      <a-plane ID="floor" position="0 -5.222 125.980" height="70" width="35" rotation="-90 -90 0" scale="9.040 2.560 10.000" src="https://codehs.com/uploads/197e93c0c97899153601dd052769cee6"></a-plane>
+      <a-plane ID="ceiling" position="0 -5.222 125.980" height="70" width="35" rotation="-90 -90 0" scale="9.040 2.560 10.000" src="https://codehs.com/uploads/197e93c0c97899153601dd052769cee6"></a-plane>
       <!--***************************************************
 // R&L WALLS
 ****************************************************-->
@@ -62,7 +60,17 @@
       <!--***************************************************
 // CARPET
 ****************************************************-->
-      <a-box ID="carpet" position="-0.234 -5.204 78.912" height="1" width="7" rotation="-90 0 0" scale="1.850 220.000 0.001" color="#b85151" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <a-box id="carpet" position="-0.234 -5.204 89.19627" height="1" width="7" rotation="-90 0 0" scale="1.83 226.67 0.001" color="#b85151" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25" material="" geometry=""></a-box>
+
+      <a-box id="small carpet1" position="59.13707 -4.94128 148.20158" height="1" width="7" rotation="-90 0 0" scale="2.35 100 0.001" color="#b85151" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25" material="" geometry=""></a-box>
+      <a-box id="small carpet2" position="-60.60918 -4.4636 145.12746" height="1" width="7" rotation="-90 0 0" scale="2.35 100 0.001" color="#b85151" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25" material="" geometry=""></a-box>
+
+      <a-box id="small carpet3" position="0.78613 -4.4636 31.5701" height="1" width="7" rotation="-90 90 0" scale="2.35 120 0.001" color="#b85151" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25" material="" geometry=""></a-box>
+
+      <a-box id="small carpet4" position="0.78613 -4.4636 31.5701" height="1" width="7" rotation="-90 90 0" scale="2.35 120 0.001" color="#b85151" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25" material="" geometry=""></a-box>
+      <a-box id="small carpet5" position="40.07558 -4.90949 68.53496" height="1" width="7" rotation="-90 90 0" scale="2.35 50 0.001" color="#b85151" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25" material="" geometry=""></a-box>
+      <a-box id="small carpet6" position="-42.20897 -4.90949 68.53496" height="1" width="7" rotation="-90 90 0" scale="2.35 50 0.001" color="#b85151" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25" material="" geometry=""></a-box>
+      
       <!--***************************************************
 // INTRO BACK WALL EXTEND LEFT 
 ****************************************************-->
@@ -102,11 +110,17 @@
       <!--***************************************************
     // LEFT WALL 
     ****************************************************-->
-      <a-box ID="left wall MAIN" position="-80.976 9.117 138.878" height="1" rotation="0 90 0" width="7" scale="35.000 30.000 0.071" color="#b0b0b0" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <a-box ID="left wall MAIN" position="-80.976 9.117 112.040" height="1" rotation="0 90 0" width="7" scale="28.010 30.000 0.071" color="#b0b0b0" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+
+      <!--***************************************************
+      // LEFT WALL2
+      ****************************************************-->
+            <a-box ID="Exhibit wall" position="-0.277 7.772 234.394" height="1" width="7" rotation="0 0 0" scale="6.720 26.330 0.051" color="#e2ddc5" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      
       <!--***************************************************
     // BACK WALL
     ****************************************************-->
-      <a-box ID="back wall" position="0.764 9.915 278.974" height="1" width="7" scale="30.000 30.000 -0.099" color="#b0b0b0" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <a-box ID="back wall" position="0.764 9.915 278.974" height="1" width="7" scale="12.910 30.000 -0.099" color="#b0b0b0" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
       <!--***************************************************
       // RIGHT INSIDE WALL
       ****************************************************-->
@@ -118,11 +132,11 @@
       <!--***************************************************
       // RIGHT INSIDE3 WALL
       ****************************************************-->
-      <a-box ID="inside3 wall" position="43.483 9.513 208.576" height="1" width="7" rotation="0 0 0" scale="10.620 30.000 0.081" color="#b0b0b0" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <a-box id="inside3 wall" position="43.483 9.513 208.576" height="1" width="7" rotation="" scale="10.62 30 0.081" color="#b0b0b0" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25" material="" geometry=""></a-box>
       <!--***************************************************
       // RIGHT WALL
       ****************************************************-->
-      <a-box ID="inininside wall" position="80.645 8.266 138.597" height="1" width="7" rotation="0 90 0" scale="35.000 30.000 0.071" color="#b0b0b0" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
+      <a-box ID="inininside wall" position="80.645 8.266 112.123" height="1" width="7" rotation="0 90 0" scale="27.640 30.000 0.071" color="#b0b0b0" src="https://codehs.com/uploads/a7a1fa7e68798cf19da22441f4000687" depth="25"></a-box>
       <!--***************************************************
 // INSIDE WALL2
 ****************************************************-->
@@ -264,7 +278,7 @@
 
       <!--***************************************************
       // SPIRITED AWAY STILLS ****************************************************-->
-      <a-plane ID="SA1" position="-77.869 9.841 176.442" height="20"       width="10" rotation="0 90 0" color="#c7c7c7" scale="3.320 1.070 4.000"     src="/StudioGhibli/Assets/Images/SAnoface.png"></a-plane>
+      <a-plane id="SA1" position="-79.82925 9.841 176.442" height="20" width="10" rotation="0 90 0" color="#c7c7c7" scale="3.32 1.07 4" src="/StudioGhibli/Assets/Images/SAnoface.png" material="" geometry=""></a-plane>
 
       <!--***************************************************
       // SPIRITED AWAY STILLS ****************************************************-->
@@ -293,6 +307,30 @@
        <!--***************************************************
         // TORORO IMAGE GENERAL ****************************************************-->
         <a-plane ID="Tororo" position="-44.968 9.322 206.975" height="20"       width="10" rotation="0 180 0" color="#c7c7c7" scale="5.340 1.190 4.000"     src="/StudioGhibli/Assets/Images/Totorororo.jpeg"></a-plane>
+
+
+       <!--***************************************************
+        // SECRET GALLERY ****************************************************-->
+        <a-plane ID="SecretGallery" position="-0.214 8.288 233.298" height="20"       width="10" rotation="0 180 0" color="#c7c7c7" scale="4.440 1.190 4.000"     src="/StudioGhibli/Assets/Images/DTEC - SecretGallery.png"></a-plane>
+
+       <!--***************************************************
+        // Y12 ARTWORKS ****************************************************-->
+      <a-plane id="Y12Haruka" position="24.38387 9.25591 276.66913" height="20" width="10" rotation="0 180 0" color="#c7c7c7" scale="1.49 0.92 4" src="/StudioGhibli/Assets/Images/Y12Haruka.png" material="" geometry=""></a-plane>
+       <!--***************************************************
+        // Y12 ARTWORKS ****************************************************-->
+      <a-plane id="Y12Ivy" position="1.3277 8.89011 277.62203" height="20" width="10" rotation="0 180 0" color="#c7c7c7" scale="1.61 1.04 4" src="/StudioGhibli/Assets/Images/Y12Ivy.png" material="" geometry=""></a-plane>
+
+       <!--***************************************************
+        // Y12 ARTWORKS ****************************************************-->
+      <a-plane id="Y12Nicky" position="-39.19101 9.29489 265.16472" height="20" width="10" rotation="0 90 0" color="#c7c7c7" scale="1.84 0.94 4" src="/StudioGhibli/Assets/Images/Y12Nicky.png" material="" geometry=""></a-plane>
+
+       <!--***************************************************
+        // Y12 ARTWORKS ****************************************************-->
+      <a-plane id="Y12Soula" position="-23.52394 8.288 277.59108" height="20" width="10" rotation="0 180 0" color="#c7c7c7" scale="1.88 1.01 4" src="/StudioGhibli/Assets/Images/Y12Soula.png" material="" geometry=""></a-plane>
+
+       <!--***************************************************
+        // Y12 ARTWORKS ****************************************************-->
+      <a-plane id="Y12Trixy" position="37.13565 9.57917 261.95319" height="20" width="10" rotation="0 -90 0" color="#c7c7c7" scale="1.72 1.11 4" src="/StudioGhibli/Assets/Images/Y12Trixy.png" material="" geometry=""></a-plane>
       
   </body>
 </html>
