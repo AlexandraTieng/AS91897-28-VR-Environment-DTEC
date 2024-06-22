@@ -8,19 +8,19 @@
     <!--Installing A-Frame-->
     <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
 
-    <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js" crossorigin="anonymous"></script>
+  <!--  <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js" crossorigin="anonymous"></script>
 
     
-    A-frame extras
+    <!--A-frame extras
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 
      <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script> 
 
   </head>
-  <body>
+  <body> -->
 
     <a-scene>
-      <a-scene physics="gravity: -9.8;restitution: 0.1" inspector-plugin-recast>
+     <!-- <a-scene physics="gravity: -9.8;restitution: 0.1" inspector-plugin-recast>
 
         <a-entity id="rig" position="0 0 0" movement-controls="constrainToNavMesh: true;speed:0.5;">
           <a-entity camera id="camera" position="0 1.6 0" look-controls
@@ -28,6 +28,7 @@
           </a-entity>
         </a-entity> -->
 
+      <a-sky color="blue"></a-sky>
     
       <!--***************************************************
 // WOOD FLOOR
@@ -331,6 +332,24 @@
        <!--***************************************************
         // Y12 ARTWORKS ****************************************************-->
       <a-plane id="Y12Trixy" position="37.13565 9.57917 261.95319" height="20" width="10" rotation="0 -90 0" color="#c7c7c7" scale="1.72 1.11 4" src="/StudioGhibli/Assets/Images/Y12Trixy.png" material="" geometry=""></a-plane>
+
+         <!--***************************************************
+          // NAVMESH ****************************************************
+<a-gltf-model ID="Navmesh" 
+  position="0 0 0" 
+  nav-mesh 
+  src="navmesh.gltf" 
+></a-gltf-model>
+
+<a-entity id= "cameraRig"
+          position="0 0 0"
+          movement-controls="constrainToNavMesh: true; speed: 0.5;"
+          >
+          <a-entity camera id="camera"
+            position="0 1.6 0"
+            look-controls="pointerLockEnabled:false" extended-wasd-controls="flyEnabled: true; turnEnabled: true; lookEnabled: true; maxLookAngle: 60;">
+          </a-entity>
+</a-entity> -->
       
   </body>
 </html>
