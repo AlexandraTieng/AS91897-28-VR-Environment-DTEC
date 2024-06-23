@@ -51,6 +51,18 @@ a {
     border: none;
     cursor: pointer;
     font-size: 20px;
-    margin-top: 20px;
-    display: flex;
+    margin-top: 200px; /* Adjust vertical positioning as needed */
+    margin-right: 1150px; /* Adjust spacing between buttons */
+}
+
+.button2 {
+    background-color: #DBDBDB;
+    border-radius: 50px;
+    color: #5B5959;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 200px; /* Adjust vertical positioning as needed */
+    margin-left: auto; /* Push button2 to the right */
 }
